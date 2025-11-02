@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NP BEAUTY CREATION — Beauty that Blooms</title>
+  <meta name="description" content="NP BEAUTY CREATION — Professional beauty, hair, nails and bridal services in Melbourne, Sydney & Brisbane. Book online, view services, gallery and special offers." />
+  <meta name="author" content="NP BEAUTY CREATION" />
+  <meta name="theme-color" content="#C2185B" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Basic structured data for local business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "NP BEAUTY CREATION",
+    "image": "https://via.placeholder.com/600x400?text=NP+BEAUTY+CREATION",
+    "telephone": "+61 400 000 000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Melbourne",
+      "addressRegion": "VIC",
+      "addressCountry": "AU"
+    },
+    "priceRange": "$$",
+    "url": "https://npbeautycreation.example"
+  }
+  </script>
+
+  <style>
+    :root{
+      --accent:#C2185B; --accent-2:#FF6F91; --muted:#6b7280; --bg:#f8fafc; --card:#ffffff;
+      --max-width:1100px; --radius:12px; --pad:16px;
+    }
+    *{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    html,body{height:100%;margin:0;background:var(--bg);color:#0f172a}
+    a{color:inherit}
+    .container{max-width:var(--max-width);margin:0 auto;padding:0 18px}
+
+    header{background:linear-gradient(90deg,rgba(194,24,91,0.06),rgba(255,111,145,0.04));padding:14px 0;position:sticky;top:0;z-index:60}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav ul{display:flex;gap:12px;list-style:none;margin:0;padding:0}
+    nav a{color:#0f172a;text-decoration:none;font-weight:600}
+    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none}
+
+    main{padding:28px 0}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:start;padding-bottom:18px}
+    h1{font-size:28px;margin:0 0 8px}
+    .lead{color:var(--muted);margin-bottom:14px}
+    .buttons{display:flex;gap:10px}
+    .btn{padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600;display:inline-block}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-outline{border:2px solid var(--accent);color:var(--accent);background:transparent}
+
+    .feature{background:var(--card);padding:var(--pad);border-radius:var(--radius);box-shadow:0 6px 18px rgba(15,23,42,0.05)}
+
+    /* Services grid */
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+    .service{background:var(--card);padding:14px;border-radius:10px}
+    .price{font-weight:700;color:var(--accent);margin-top:8px}
+
+    /* Responsive gallery & team */
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+    .gallery img{width:100%;height:150px;object-fit:cover;border-radius:8px}
+    .team{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px}
+    .member{text-align:center;padding:12px;background:var(--card);border-radius:10px}
+    .avatar{width:88px;height:88px;border-radius:999px;object-fit:cover;margin:0 auto 10px}
+
+    /* Table */
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    th,td{padding:10px;text-align:left;border-bottom:1px solid #eef2f7}
+
+    /* Footer */
+    footer{padding:24px 0;background:#fff;margin-top:28px;border-top:1px solid #eef2f7}
+
+    /* Utilities */
+    .flex{display:flex;gap:12px;align-items:center}
+    .muted{color:var(--muted)}
+
+    /* Responsive */
+    @media(max-width:980px){.hero{grid-template-columns:1fr}.services-grid{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}.team{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.services-grid{grid-template-columns:1fr}.team{grid-template-columns:1fr}.gallery img{height:120px}}
+
+    /* accessibility focus */
+    a:focus,button:focus,input:focus,select:focus{outline:3px solid rgba(194,24,91,0.18);outline-offset:2px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Main navigation">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">NP</div>
+        <div>
+          <div style="font-weight:700">NP BEAUTY CREATION</div>
+          <div class="muted" style="font-size:12px">Beauty that blooms — Melbourne | Sydney | Brisbane | India</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="cta" href="#booking">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="top">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div>
+        <h1 id="hero-heading">NP BEAUTY CREATION — Professional beauty & bridal services</h1>
+        <p class="lead">Expert stylists, salon-quality treatments, and on-time service for events across Melbourne, Sydney and Brisbane. Book a stylist or request a mobile visit.</p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#booking">Book Now</a>
+          <a class="btn btn-outline" href="#services">View Services</a>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:18px;flex-wrap:wrap">
+          <div class="feature" style="flex:1;min-width:220px">
+            <strong>Open hours</strong>
+            <div class="muted">Mon - Sun • 9:00 AM - 8:00 PM</div>
+          </div>
+          <div class="feature" style="width:220px;text-align:center;min-width:220px">
+            <strong>Phone</strong>
+            <div class="muted">+61 000 000 000</div>
+            <a href="tel:+61400000000" class="btn" style="margin-top:8px;display:inline-block">Call Now</a>
+          </div>
+        </div>
+
+        <div style="margin-top:14px;font-size:14px" class="muted">
+          <strong>Special offer:</strong> Use code <span style="color:var(--accent);font-weight:700">FESTIVE20</span> for 20% off first booking. <a href="#coupon">Terms</a>
+        </div>
+      </div>
+
+      <!-- BOOKING FORM -->
+      <aside class="feature" aria-labelledby="booking">
+        <h3 id="booking" style="margin-top:0">Quick booking</h3>
+        <!-- Simple client-side booking form (replace action with server endpoint when ready) -->
+        <form id="bookingForm" action="" method="post" onsubmit="handleBooking(event)">
+          <label class="muted">Name <span aria-hidden="true">*</span></label>
+          <input name="name" required style="width:100%;padding:8px;border-radius:8px;border:1px solid #e6edf3;margin-bottom:8px">
+
+          <label class="muted">Phone or Email <span aria-hidden="true">*</span></label>
+          <input name="contact" required style="width:100%;padding:8px;border-radius:8px;border:1px solid #e6edf3;margin-bottom:8px">
+
+          <label class="muted">Service</label>
+          <select name="service" style="width:100%;padding:8px;border-radius:8px;border:1px solid #e6edf3;margin-bottom:8px">
+            <option>Haircut & Styling</option>
+            <option>Bridal Make-up</option>
+            <option>Facial Treatment</option>
+            <option>Manicure / Pedicure</option>
+          </select>
+
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-primary" type="submit">Request Booking</button>
+            <a class="btn" href="/book-full">Full booking</a>
+          </div>
+          <div class="muted" style="margin-top:8px;font-size:12px">We will confirm within 24 hours. Deposits may apply for bridal bookings.</div>
+        </form>
+
+        <div style="margin-top:12px;text-align:center">
+          <h4 style="margin:6px 0">Gift Cards</h4>
+          <p class="muted" style="margin:0 0 8px">Buy e-gift cards — perfect for birthdays and special events.</p>
+          <a class="btn btn-outline" href="#shop">Buy Gift Card</a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Our Services</h2>
+      <p class="muted">Professional treatments for every occasion — view popular services and starting prices.</p>
+
+      <div class="services-grid">
+        <article class="service" aria-labelledby="s1">
+          <h3 id="s1">Haircut & Styling</h3>
+          <p class="muted">Precision cuts, styling and blowouts for all hair types.</p>
+          <div class="price">From $45</div>
+        </article>
+
+        <article class="service" aria-labelledby="s2">
+          <h3 id="s2">Colouring & Highlights</h3>
+          <p class="muted">Balayage, full colour and highlights with premium products.</p>
+          <div class="price">From $120</div>
+        </article>
+
+        <article class="service" aria-labelledby="s3">
+          <h3 id="s3">Bridal Make-up</h3>
+          <p class="muted">Trial + day-of bridal package, mobile service available.</p>
+          <div class="price">Packages from $350</div>
+        </article>
+
+        <article class="service" aria-labelledby="s4">
+          <h3 id="s4">Facials & Skin Care</h3>
+          <p class="muted">Express, signature and deep-clean facials tailored to your skin.</p>
+          <div class="price">From $60</div>
+        </article>
+
+        <article class="service" aria-labelledby="s5">
+          <h3 id="s5">Nails — Manicure & Pedicure</h3>
+          <p class="muted">Classic, gel and luxury spa options.</p>
+          <div class="price">From $35</div>
+        </article>
+
+        <article class="service" aria-labelledby="s6">
+          <h3 id="s6">Waxing & Threading</h3>
+          <p class="muted">Quick, hygienic hair removal services.</p>
+          <div class="price">From $12</div>
+        </article>
+      </div>
+
+      <h3 style="margin-top:18px">Price List (Quick view)</h3>
+      <div class="feature" style="overflow:auto">
+        <table aria-label="Price list">
+          <thead><tr><th>Service</th><th>Duration</th><th>Price (AUD)</th></tr></thead>
+          <tbody>
+            <tr><td>Haircut — Junior stylist</td><td>30–45 min</td><td>$45</td></tr>
+            <tr><td>Haircut — Senior stylist</td><td>45–60 min</td><td>$60</td></tr>
+            <tr><td>Balayage / Highlights</td><td>2–4 hrs</td><td>$150+</td></tr>
+            <tr><td>Bridal make-up (Trial + Day)</td><td>3–5 hrs</td><td>$500</td></tr>
+            <tr><td>Express Facial</td><td>30 min</td><td>$60</td></tr>
+            <tr><td>Classic Manicure</td><td>45 min</td><td>$35</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" aria-labelledby="gallery-heading" style="margin-top:20px">
+      <h2 id="gallery-heading">Gallery</h2>
+      <p class="muted">Before & afters, bridal looks and event styling.</p>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/600x400?text=Bridal+Look+1" alt="Bridal look 1">
+        <img src="https://via.placeholder.com/600x400?text=Hair+Color" alt="Hair color example">
+        <img src="https://via.placeholder.com/600x400?text=Makeup+Before+After" alt="Makeup before and after">
+        <img src="https://via.placeholder.com/600x400?text=Nails" alt="Nail art example">
+        <img src="https://via.placeholder.com/600x400?text=Salon+Interior" alt="Salon interior">
+        <img src="https://via.placeholder.com/600x400?text=Facial+Treatment" alt="Facial treatment">
+        <img src="https://via.placeholder.com/600x400?text=Bridal+Trial" alt="Bridal trial">
+        <img src="https://via.placeholder.com/600x400?text=Before+After" alt="Before and after">
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" aria-labelledby="team-heading" style="margin-top:20px">
+      <h2 id="team-heading">Meet The Team</h2>
+      <p class="muted">Talented stylists, makeup artists and therapists who love what they do.</p>
+      <div class="team">
+        <div class="member">
+          <img class="avatar" src="https://via.placeholder.com/120?text=R" alt="Rita Singh, Senior Stylist">
+          <strong>Rita Singh</strong>
+          <div class="muted">Hair Stylist — experienced</div>
+        </div>
+        <div class="member">
+          <img class="avatar" src="https://C:\Users\pkaus\Downloads\WhatsApp Image 2025-11-02/120?text=J" alt="Neha Sharma, Makeup Artist">
+          <strong>Neha Sharma</strong>
+          <div class="muted">Lead Makeup Artist — Bridal specialist</div>
+        </div>
+        <div class="member">
+          <img class="avatar" src="https://via.placeholder.com/120?text=M" alt="Maya Patel, Therapist">
+          <strong>Maya Patel</strong>
+          <div class="muted">Skin therapist & facial specialist</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="reviews" aria-labelledby="reviews-heading" style="margin-top:20px">
+      <h2 id="reviews-heading">What clients say</h2>
+      <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+        <blockquote class="feature" style="flex:1;min-width:240px"> 
+          <p style="margin:0 0 8px"><strong>"Absolutely amazing — my wedding look was flawless."</strong></p>
+          <cite class="muted">— Priya, Melbourne</cite>
+        </blockquote>
+
+        <blockquote class="feature" style="flex:1;min-width:240px"> 
+          <p style="margin:0 0 8px"><strong>"Professional and punctual. Highly recommend for events."</strong></p>
+          <cite class="muted">— Lucas, Sydney</cite>
+        </blockquote>
+
+        <blockquote class="feature" style="flex:1;min-width:240px"> 
+          <p style="margin:0 0 8px"><strong>"Great value for quality. Lovely team."</strong></p>
+          <cite class="muted">— Mia, Brisbane</cite>
+        </blockquote>
+      </div>
+      <div style="margin-top:12px">
+        <a class="btn btn-outline" href="https://www.google.com/search?q=NP+BEAUTY+CREATION+reviews" target="_blank" rel="noopener">Read more on Google</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" style="margin-top:20px">
+      <h2>Frequently Asked Questions</h2>
+      <div class="feature">
+        <details style="margin-bottom:8px"><summary><strong>Do you do home visits?</strong></summary><p class="muted">Yes — our mobile team covers Greater Melbourne, Sydney & Brisbane. Travel fee may apply based on location.</p></details>
+        <details style="margin-bottom:8px"><summary><strong>What is your cancellation policy?</strong></summary><p class="muted">We request 24 hours' notice for cancellations. Bridal bookings require a non-refundable deposit.</p></details>
+        <details style="margin-bottom:8px"><summary><strong>Do you accept walk-ins?</strong></summary><p class="muted">Walk-ins are accepted when available; we recommend booking for preferred times and stylists.</p></details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" style="margin-top:20px;display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start">
+      <div>
+        <h2>Contact & Location</h2>
+        <p class="muted">Reach out for bookings, events and partnerships.</p>
+        <form id="contactForm" class="feature" onsubmit="handleContact(event)">
+          <label class="muted">Name</label>
+          <input name="name" required style="width:100%;padding:8px;border-radius:8px;border:1px solid #e6edf3;margin-bottom:8px">
+          <label class="muted">Email</label>
+          <input name="email" type="email" required style="width:100%;padding:8px;border-radius:8px;border:1px solid #e6edf3;margin-bottom:8px">
+          <label class="muted">Message</label>
+          <textarea name="message" required style="width:100%;padding:8px;border-radius:8px;border:1px solid #e6edf3;margin-bottom:8px"></textarea>
+          <div style="display:flex;gap:8px"><button class="btn btn-primary" type="submit">Send Message</button><a class="btn" href="mailto:info@npbeautycreation.com.au">Email Us</a></div>
+        </form>
+      </div>
+
+      <aside>
+        <div class="feature">
+          <strong>Our service areas</strong>
+          <p class="muted">Melbourne, Sydney & Brisbane — Mobile team available across metro areas. Exact locations shared on booking confirmation.</p>
+          <div style="margin-top:8px"><a class="btn" href="https://maps.google.com" target="_blank" rel="noopener">Get directions</a></div>
+        </div>
+
+        <div class="feature" style="margin-top:12px">
+          <strong>Quick contact</strong>
+          <div class="muted">Phone: +61 000 000 000</div>
+          <div class="muted">WhatsApp: +61 000 000 000</div>
+          <a class="btn btn-outline" href="https://wa.me/61400000000" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- SHOP -->
+    <section id="shop" style="margin-top:20px">
+      <h2>Shop & Gift Cards</h2>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+        <div class="feature" style="min-width:220px">
+          <strong>$50 Gift Card</strong>
+          <p class="muted">E-gift card delivered by email. Valid 12 months.</p>
+          <a class="btn btn-primary" href="#">Buy Now</a>
+        </div>
+        <div class="feature" style="min-width:220px">
+          <strong>$100 Gift Card</strong>
+          <p class="muted">Perfect for pamper packages.</p>
+          <a class="btn btn-primary" href="#">Buy Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUPON -->
+    <section id="coupon" style="margin-top:20px">
+      <h2>Coupon & Terms</h2>
+      <div class="feature">
+        <p><strong>Coupon code:</strong> <span style="color:var(--accent);font-weight:700">FESTIVE20</span> — 20% off first booking. Valid for new clients only. Cannot be combined with other offers. Expires 31 Dec 2025. Minimum spend $40. Redemption subject to availability.</p>
+        <h4>Terms & Conditions</h4>
+        <ul class="muted">
+          <li>All bookings may require a deposit for events and bridal services.</li>
+          <li>Cancellation with less than 24 hours' notice may incur a fee.</li>
+          <li>Prices are subject to change; the price at the time of booking applies.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>
+        <div style="font-weight:700">NP BEAUTY CREATION</div>
+        <div class="muted">© <span id="year"></span> NP Beauty Creation. All rights reserved.</div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small client-side handlers; replace with real endpoints when ready
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleBooking(e){
+      e.preventDefault();
+      const form = e.target;
+      // simple validation and demo confirmation
+      alert('Thanks ' + (form.name?.value || '') + '! Your booking request has been received. We will contact you within 24 hours.');
+      form.reset();
+    }
+
+    function handleContact(e){
+      e.preventDefault();
+      const form = e.target;
+      alert('Message sent — we will reply within 24 hours.');
+      form.reset();
+    }
+  </script>
+</body>
+</html>
